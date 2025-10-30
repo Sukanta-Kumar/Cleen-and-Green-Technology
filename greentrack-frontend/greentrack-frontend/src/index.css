@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8f5e9; /* Light green background for eco theme */
+  color: #2e7d32; /* Dark green text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  text-transform: none;
+}
