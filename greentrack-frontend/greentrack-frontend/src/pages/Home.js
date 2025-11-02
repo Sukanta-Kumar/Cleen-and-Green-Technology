@@ -31,6 +31,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import greentrackLogo from '../assets/greentrack-logo.png';
 import { useNavigate } from 'react-router-dom';
+import FAQSection from '../components/FAQSection';
 
 const Home = ({ onFeatureClick }) => {
   const navigate = useNavigate();
@@ -140,6 +141,11 @@ const Home = ({ onFeatureClick }) => {
           <Button variant="contained" size="large" sx={{ bgcolor: '#43a047', '&:hover': { bgcolor: '#2e7d32', boxShadow: '0 0 20px #A5D6A7' }, px: 5, py: 1.5, borderRadius: '12px', fontWeight: 'bold', color: 'white' }} onClick={onFeatureClick}>Join the Green Movement ♻️</Button>
         </Box>
       </motion.div>
+
+      {/* FAQ Section */}
+      <Box sx={{ mt: 10 }}>
+        <FAQSection />
+      </Box>
 
       {/* FOOTER */}
       <Box sx={{ mt: 8, background: 'linear-gradient(135deg, #2E7D32, #1B5E20)', color: 'white', borderTopLeftRadius: '30px', borderTopRightRadius: '30px', px: { xs: 3, md: 8 }, py: 6 }}>
