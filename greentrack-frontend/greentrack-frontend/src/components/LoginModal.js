@@ -9,7 +9,9 @@ import {
   InputAdornment
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import Logo from '../assets/logo.png'; // ✅ Optional - if you want to show your logo
+import Logo from '../assets/logo.png'; //  if you want to show your logo
+import ForgotPasswordModal from './ForgotPasswordModal';
+
 
 const style = {
   position: 'absolute',
@@ -30,6 +32,7 @@ const LoginModal = ({ open, handleClose }) => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
+  const [openForgot, setOpenForgot] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -51,16 +54,14 @@ const LoginModal = ({ open, handleClose }) => {
   };
 
   try {
-    const res = await fetch('http://localhost:8080/api/auth/login', { // <-- NOTE: /login (not /signin)
+    const res = await fetch('http://localhost:8080/api/auth/login', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
 
-    // Debug info in console (helps track what happened)
     console.log('Login request sent. status=', res.status, 'ok=', res.ok);
 
-    // try to parse JSON only if response has JSON content-type
     const contentType = res.headers.get('content-type') || '';
     let data = null;
     if (contentType.includes('application/json')) {
@@ -69,12 +70,10 @@ const LoginModal = ({ open, handleClose }) => {
     } else {
       const text = await res.text();
       console.log('Login response text:', text);
-      // if not JSON, show text as error
       throw new Error(`Server returned ${res.status}: ${text}`);
     }
 
     if (res.ok && data && data.status) {
-      // Save user (non sensitive) and refresh to update navbar
       localStorage.setItem('user', JSON.stringify({
         fullName: data.user || data.fullName || '',
         email: data.email || '',
@@ -151,9 +150,14 @@ const LoginModal = ({ open, handleClose }) => {
               cursor: 'pointer',
               '&:hover': { textDecoration: 'underline' },
             }}
+            onClick={() => setOpenForgot(true)}
           >
-            Forgot Password?
+          Forgot Password?
           </Typography>
+
+          {/* Forgot Password Modal */}
+          <ForgotPasswordModal open={openForgot} handleClose={() => setOpenForgot(false)} />
+
 
           <Button
             type="submit"

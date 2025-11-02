@@ -16,7 +16,6 @@ import {
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import Logo from '../assets/logo.png';
 
-// Import your LoginModal here
 import LoginModal from './LoginModal';
 
 const style = {
@@ -96,7 +95,6 @@ const RegisterModal = ({ open, handleClose }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  // State to open LoginModal
   const [openLogin, setOpenLogin] = useState(false);
 
   const handleChange = (e) => {
@@ -179,7 +177,6 @@ const handleSubmit = async (e) => {
   if (response.ok && data.status) {
   alert("Signup successful! Logging you in...");
 
-  // ✅ Save user data locally (so navbar can show initials)
   localStorage.setItem(
     "user",
     JSON.stringify({

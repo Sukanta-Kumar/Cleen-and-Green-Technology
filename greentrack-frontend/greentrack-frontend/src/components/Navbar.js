@@ -34,9 +34,8 @@ const navItems = [
 const Navbar = ({ setOpenLogin, setOpenRegister, onFeatureClick }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  // 🟢 User login state & avatar menu
-const [anchorEl, setAnchorEl] = useState(null);
-const [user, setUser] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [user, setUser] = useState(null);
 
 useEffect(() => {
   try {
@@ -138,23 +137,6 @@ const handleLogout = () => {
           </motion.div>
         ))}
 
-{/*Because only the Register button will appear in your Navbar(mobile) */}
-        {/* <ListItem disablePadding>
-          <Button
-            onClick={() => setOpenLogin(true)}
-            sx={{
-              color: 'white',
-              bgcolor: '#66bb6a',
-              width: '100%',
-              mt: 1,
-              '&:hover': { bgcolor: '#43a047', transform: 'scale(1.05)' },
-              transition: 'all 0.3s ease',
-            }}
-          >
-            Login
-          </Button>
-        </ListItem> */}
-
       {user ? (
   <ListItem disablePadding>
     <Button
@@ -187,7 +169,6 @@ const handleLogout = () => {
     </Button>
   </ListItem>
 )}
-
 
         <ListItem disablePadding>
           <Tooltip title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
@@ -263,23 +244,7 @@ const handleLogout = () => {
                 </Button>
               </motion.div>
             ))}
-
-            {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                onClick={() => setOpenLogin(true)}
-                sx={{
-                  color: 'white',
-                  bgcolor: '#43a047',
-                  '&:hover': { bgcolor: '#66bb6a' },
-                  borderRadius: 2,
-                  ml: 1,
-                  transition: 'all 0.3s ease',
-                }}
-              >
-                Login
-              </Button>
-            </motion.div> */}
-
+            
 {user ? (
   <>
     <Avatar

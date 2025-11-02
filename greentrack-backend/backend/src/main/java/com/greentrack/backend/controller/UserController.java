@@ -73,6 +73,58 @@ public class UserController {
         response.put("contactNumber", user.getContactNumber());
         return response;
     }
+
+    // =============================
+    // Forgot Password API
+    // This API verifies both email and contact number, then updates password in MySQL.
+    // =============================
+    @PostMapping("/forgot-password")
+    public Map<String, Object> forgotPassword(@RequestBody Map<String, String> request) {
+        Map<String, Object> response = new HashMap<>();
+
+        String email = request.get("email");
+        String contactNumber = request.get("contactNumber");
+        String newPassword = request.get("newPassword");
+
+        // Validate input
+        if (email == null || email.isBlank() ||
+                contactNumber == null || contactNumber.isBlank() ||
+                newPassword == null || newPassword.isBlank()) {
+            response.put("status", false);
+            response.put("message", "Please provide email, contact number, and new password!");
+            return response;
+        }
+
+        // Normalize contact number format
+        String normalizedContact = contactNumber.trim();
+        if (!normalizedContact.startsWith("+91") && normalizedContact.matches("^\\d{10}$")) {
+            normalizedContact = "+91" + normalizedContact;
+        }
+
+        // Find user by both email and contact number
+        User user = userRepository.findByEmailAndContactNumber(email, normalizedContact).orElse(null);
+
+        // Try without +91 if not found
+        if (user == null && normalizedContact.startsWith("+91")) {
+            String plainContact = normalizedContact.substring(3);
+            user = userRepository.findByEmailAndContactNumber(email, plainContact).orElse(null);
+        }
+
+        // If still not found, send error
+        if (user == null) {
+            response.put("status", false);
+            response.put("message", "Email and contact number do not match any registered user!");
+            return response;
+        }
+
+        // Update password (hashed)
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+
+        response.put("status", true);
+        response.put("message", "Password updated successfully!");
+        return response;
+    }
 }
 
 
