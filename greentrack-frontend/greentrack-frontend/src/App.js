@@ -46,6 +46,7 @@ function App() {
         <Route path="/earn-coins" element={<EarnCoins onClick={handleFeatureClick} />} />
         <Route path="/market-place" element={<MarketPlace onClick={handleFeatureClick} />} />
         <Route path="/courses" element={<Courses onClick={handleFeatureClick} />} />
+        <Route path="/marketplace" element={<MarketPlace />} />
       </Routes>
 
   {!user && (
