@@ -12,16 +12,14 @@ public class User {
     private String fullName;
     private String email;
     private String password;
-    private String role;
     public String contactNumber;
 
     public User() {}
 
-    public User(String fullName, String email, String password, String role, String contactNumber) {
+    public User(String fullName, String email, String password, String contactNumber) {
         this.fullName = fullName;
         this.email = email;
         this.password = password;
-        this.role = role;
         this.contactNumber = contactNumber;
     }
 
@@ -37,9 +35,6 @@ public class User {
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
-
-    public String getRole() { return role; }
-    public void setRole(String role) { this.role = role; }
 
     public String getContactNumber() { return contactNumber; }
     public void setContactNumber(String contactNumber) { this.contactNumber = contactNumber;}

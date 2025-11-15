@@ -27,7 +27,7 @@ const navItems = [
   { name: 'Home', path: '/' },
   { name: 'Report Waste', path: '/report-waste' },
   { name: 'Earn Coins', path: '/earn-coins' },
-  { name: 'Market Place', path: '/market-place' },
+  { name: 'Market Place', path: '/marketplace' },
   { name: 'Courses', path: '/courses' },
 ];
 
@@ -57,48 +57,47 @@ const handleLogout = () => {
   window.location.reload();
 };
 
+const toggleDrawer = () => {
+  setMobileOpen(!mobileOpen);
+};
 
-  const toggleDrawer = () => {
-    setMobileOpen(!mobileOpen);
-  };
+const toggleDarkMode = () => {
+  setDarkMode(!darkMode);
+  document.body.style.transition = 'all 0.5s ease';
+  document.body.style.backgroundColor = darkMode ? '#f1f8e9' : '#121212';
+  document.body.style.color = darkMode ? '#000' : '#fff';
+};
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.style.transition = 'all 0.5s ease';
-    document.body.style.backgroundColor = darkMode ? '#f1f8e9' : '#121212';
-    document.body.style.color = darkMode ? '#000' : '#fff';
-  };
-
-  const drawer = (
-    <Box
-      onClick={toggleDrawer}
-      sx={{
-        textAlign: 'center',
-        width: 250,
-        backgroundColor: darkMode ? '#121212' : '#f1f8e9',
-        height: '100%',
-      }}
+const drawer = (
+  <Box
+    onClick={toggleDrawer}
+    sx={{
+      textAlign: 'center',
+      width: 250,
+      backgroundColor: darkMode ? '#121212' : '#f1f8e9',
+      height: '100%',
+    }}
+  >
+  <motion.div
+    initial={{ x: -100, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    <Typography
+      variant="h5"
+        sx={{
+          my: 2,
+          color: '#2e7d32',
+          fontWeight: 'bold',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 1,
+        }}
     >
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Typography
-          variant="h5"
-          sx={{
-            my: 2,
-            color: '#2e7d32',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 1,
-          }}
-        >
-          <ForestIcon sx={{ fontSize: 30 }} /> GreenTrack
-        </Typography>
-      </motion.div>
+      <ForestIcon sx={{ fontSize: 30 }} /> GreenTrack
+    </Typography>
+  </motion.div>
 
       <List>
         {navItems.map((item, index) => (
@@ -124,9 +123,11 @@ const handleLogout = () => {
                   onClick={(e) => {
                     if (item.name === 'Home') {
                     navigate('/');
-                    } else {
+                    } else if (!user) {
                     e.preventDefault();
                     onFeatureClick();
+                    } else {
+                      navigate(item.path);
                     }
                   }}
                 >
@@ -136,6 +137,7 @@ const handleLogout = () => {
             </ListItem>
           </motion.div>
         ))}
+
 
       {user ? (
   <ListItem disablePadding>
@@ -233,18 +235,19 @@ const handleLogout = () => {
                   onClick={(e) => {
                     if (item.name === 'Home') {
                     navigate('/');
-                    } else {
+                    } else if (!user) {
                     e.preventDefault();
                     onFeatureClick();
+                    } else {
+                      navigate(item.path);
                     }
                   }}
-
                 >
                   {item.name}
                 </Button>
               </motion.div>
             ))}
-            
+
 {user ? (
   <>
     <Avatar
