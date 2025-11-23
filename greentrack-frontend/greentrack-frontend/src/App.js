@@ -14,6 +14,16 @@ import ProductDetails from "./pages/ProductDetails";
 import CartPage from "./pages/CartPage";
 import Checkout from "./pages/Checkout";
 import OrderSuccess from "./pages/OrderSuccess";
+// 🌱 Importing course components
+import RecyclingCourse from "./components/RecyclingCourse";
+import WasteManagementAtHome from "./components/WasteManagementAtHome";
+import SustainableLiving from "./components/SustainableLiving";
+import GreenTechInnovation from "./components/GreenTechInnovations";
+import EWasteAwareness from "./components/EWasteAwareness";
+import EnvironmentalAwareness from "./components/EnvironmentalAwareness";
+import EnergyConservation from "./components/EnergyConservation";
+import EcoFriendlyAgriculture from "./components/EcoFriendlyAgriculture";
+import CarbonFootprintCourse from "./components/CarbonFootprintCourse";
 
 function App() {
   const [openLogin, setOpenLogin] = useState(false);
@@ -55,6 +65,18 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/order-success" element={<OrderSuccess />} />
+
+          {/* 🌱 Courses Pages */}
+        <Route path="/recycling-course" element={<RecyclingCourse />} />
+        <Route path="/waste-management" element={<WasteManagementAtHome />} />
+        <Route path="/sustainable-living" element={<SustainableLiving />} />
+        <Route path="/green-tech-innovation" element={<GreenTechInnovation />} /> 
+        <Route path="/environmental-awareness" element={<EnvironmentalAwareness />} />
+        <Route path="/energy-conservation" element={<EnergyConservation />} />
+        <Route path="/eco-friendly-agriculture" element={<EcoFriendlyAgriculture />} />
+        <Route path="/carbon-footprint-course" element={<CarbonFootprintCourse />} />
+        <Route path="/e-waste-awareness" element={<EWasteAwareness />} />
+
       </Routes>
 
   {!user && (
