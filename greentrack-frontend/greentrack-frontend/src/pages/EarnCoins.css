@@ -1,0 +1,88 @@
+/* MAIN CONTAINER */
+.coins-container {
+  width: 100%;
+  padding: 15px;
+  background: #f6fdf8;
+}
+
+/* HEADER SECTION */
+.coins-header {
+  background: linear-gradient(135deg, #d6ffe0, #e9f7ff);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.coins-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #146b35;
+}
+
+/* BALANCE CARD */
+.coins-balance-card {
+  background: #fff;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.balance-row.small {
+  font-size: 14px;
+  color: gray;
+}
+
+.view-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #1b8f44;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* SECTIONS */
+.earn-box, .info-card, .faq-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.tick-list li {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.coins-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.coins-table th, .coins-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* FAQ */
+.faq-card details {
+  background: #f8fff9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.footer-space {
+  height: 30px;
+}

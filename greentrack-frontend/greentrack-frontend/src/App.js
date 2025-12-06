@@ -8,7 +8,7 @@ import MarketPlace from './pages/MarketPlace';
 import Courses from './pages/Courses';
 import LoginModal from './components/LoginModal';
 import RegisterModal from './components/RegisterModal';
-import InteractionModal from './components/InteractionModal'; // New modal with logo & registration prompt
+import InteractionModal from './components/InteractionModal'; 
 import { CartProvider } from './context/CartContext';
 import ProductDetails from "./pages/ProductDetails";
 import CartPage from "./pages/CartPage";
@@ -58,7 +58,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/report-waste" element={<ReportWaste onClick={handleFeatureClick} />} />
-        <Route path="/earn-coins" element={<EarnCoins onClick={handleFeatureClick} />} />
+        {/* <Route path="/earn-coins" element={<EarnCoins onClick={handleFeatureClick} />} /> */}
+        <Route path="/earncoins" element={<EarnCoins />} />
         <Route path="/courses" element={<Courses onClick={handleFeatureClick} />} />
         <Route path="/marketplace" element={<MarketPlace />} />
         <Route path="/product/:id" element={<ProductDetails />} />
