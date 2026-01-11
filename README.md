@@ -18,10 +18,10 @@
 
 <h2 style = "color:#333;"> Student Details </h2>
 <div align = "left" style ="margin: 20px; font-size: 16px;">
-    <p><strong>Name:</strong> <!--- Add your name---> </p>
-    <p><strong>Email ID:</strong> <!--- Add your mail id ---> </p>
-    <p><strong>College Name:</strong> <!--- Add your college name---> </p>
-    <p><strong>Branch/Specialization :</strong> <!--- Add your branch name---> </p>
+    <p><strong>Name:</strong> Sukanta Kumar Pradhan </p>
+    <p><strong>Email ID:</strong> pradhansukanta964@gmail.com </p>
+    <p><strong>College Name:</strong> Radhakrishna Institute of Technology and Engineering </p>
+    <p><strong>Branch/Specialization :</strong> Computer Science and Engineering </p>
     <p><strong>College ID:</strong> <!--- Add your college ID---> </p>
 </div>
 
@@ -29,20 +29,25 @@
 
 <h2 style="color:#333;"> Course Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Course Opted:</strong> <!--- Add your course name---> </p>
-    <p><strong>Instructor Name:</strong> <!--- Add your instructor name---> </p>
+    <p><strong>Course Opted:</strong> DSA in JAVA </p>
+    <p><strong>Instructor Name:</strong> Karthik R </p>
 </div>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Duration:</strong> <!--- Durations in months---> </p>
+    <p><strong>Duration:</strong> 6 months </p>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 <h2 style="color:#333;"> Trainer Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong>Trainer Name:</strong> <!–– Add trainer name ––></p>
-<p><strong>Trainer Email ID:</strong> <!–– Add trainer email ––></p>
-<p><strong>Trainer Designation:</strong> <!–– Add designation along with company––></p>
+<p><strong>Trainer Name:</strong> Mr. Karthik R </p>
+<p><strong>Trainer Email ID:</strong> karthikofficial2712@gmail.com </p>
+<p><strong>Trainer Designation:</strong> Instructor – SURE Trust (Software QA Engineer, Jio Platforms Limited) </p>
+
+<p><strong>Trainer Name:</strong> Mr. Lijo Joseph </p>
+<p><strong>Trainer Email ID:</strong> lijojoseph234@gmail.com </p>
+<p><strong>Trainer Designation:</strong> Technical Mentor – SURE Trust (SE 3 – Amazon) </p>
+
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
@@ -63,77 +68,95 @@
 
 ## Overall Learning 
 
-> _This is a placeholder. Replace the text below with your personal learning summary._
-During this course, I learned the fundamentals of web development and project design.
-I gained hands-on experience with HTML, CSS, JavaScript and strengthened my skills in 
-problem-solving, teamwork, documentation, and delivering real-world project solutions.
+During this internship and course period, I gained a strong understanding of
+problem-solving using **DSA in Java** and its importance in writing efficient and optimized code.
+
+Along with this, I applied my technical knowledge while working on a real-world
+full stack project called **Clean and Green Technology**.
+I learned how frontend and backend systems communicate using **REST APIs**
+and how data is stored and managed using **MySQL**.
+
+I worked with **React** for building user-friendly interfaces and **Spring Boot**
+for handling backend logic such as authentication, reward calculation,
+order processing, and database operations.
+
+This learning experience improved my ability to analyze requirements,
+design modular solutions, work in a team environment,
+and confidently explain technical concepts.
+Overall, this internship helped me grow both technically and professionally.
+
 
 
 <h2 style="color:#333;"> Projects Completed </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong><a href="#project1">Project 1:</a></strong> &lt;!-- Add project title → --&gt;</p>
+<p><strong><a href="#project1">Project 1:</a></strong> Clean and Green Technology </p>
 
-<p><strong><a href="#project2">Project 2:</a></strong> &lt;!-- Add project title → --&gt;</p>
-
-<p><strong><a href="#project3">Project 3:</a></strong> &lt;!-- Add project title → --&gt;</p>
-
-<p><em>(You can add more projects as needed)</em></p>
 
 </div>
 
 <!-- Project 1 -->
-<h3 id="project1">Project 1: <!-- Add Project Title --></h3>
+<h3 id="project1">Project 1: Clean and Green Technology </h3>
 <p>
-  This project involved designing and developing a basic functional module using the core concepts taught in the course.
-  It focused on understanding requirements, creating structured code, and implementing key features.
+  Clean and Green Technology is a web-based application designed to address the problem of plastic waste pollution
+by encouraging citizen participation through a reward-based system.
+
+The project connects citizens, municipalities, and environmental sustainability using a digital platform.
+Users are motivated to contribute towards cleanliness by earning **Green Coins** for responsible actions,
+which can later be redeemed for eco-friendly rewards like plants and compost.
+
+The application includes modules such as user authentication,
+earning and managing Green Coins,
+an eco-friendly marketplace,
+educational content on sustainability,
+and order management.
+
+The Report Waste module is a core part of the system design,
+which enables structured waste reporting
+and forms the foundation for the reward-based workflow.
+
+This project helped me understand real-world application development,
+full stack architecture, API-based communication, and practical problem-solving
+while building a socially impactful solution.
 </p>
 <p>
   <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
 </p>
 
-<!-- Project 2 -->
-<h3 id="project2">Project 2: <!-- Add Project Title --></h3>
-<p>
-  This project expanded on intermediate concepts and required integrating multiple components to build a more complete solution.
-  It enhanced understanding of UI/UX design, modular coding, and testing.
-</p>
-<p>
-  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
-</p>
-
-<!-- Project 3 -->
-<h3 id="project3">Project 3: <!-- Add Project Title --></h3>
-<p>
-  The final project showcased the practical application of all concepts learned throughout the course.  
-  It required planning, building, optimizing, and documenting a complete real-world project.
-</p>
-<p>
-  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
-</p>
 
 <hr style="height:1px; border-top:1px solid #ccc; width:80%;" />
 
 
 ## **References**
 
-- [Wikipedia](https://wikipedia.com)
-<!--you can add refrences over here in same syntax as above -->
----
+- [Spring Boot Official Documentation](https://spring.io/projects/spring-boot)
+- [React Official Documentation](https://react.dev)
+- [MySQL Official Documentation](https://dev.mysql.com/doc/)
+- [REST API Concepts – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [Java Programming Documentation – Oracle](https://docs.oracle.com/en/java/)
+- [GeeksforGeeks – DSA in Java](https://www.geeksforgeeks.org/data-structures/)
+- [Waste Management and Sustainability – Government of India](https://swachhbharatmission.gov.in)
 
 
 ## **Learnings from LST and SST**
 
 <!-- add your experiences over here -->
-> _This is a placeholder. Replace the text below with your personal learning from LST and SST sessions summary._
-LST and SST sessions helped me....
----
+The LST and SST sessions helped me develop important professional and personal skills.
+I learned how to communicate ideas clearly, work effectively in a team,
+manage time, and follow ethical practices in a professional environment.
+
+These sessions also improved my confidence in presentations,
+interacting with mentors, and understanding real-world project expectations.
+Overall, LST and SST played a key role in shaping my professional mindset.
 
 ## **Community Services**
 
 <!-- add descreption in your own words -->
 
-During my internship period, I participated in multiple community-oriented activities .....<!-- add descreption in your own words -->
+During my internship period, I actively participated in community-oriented activities
+that focused on environmental awareness and social responsibility.
+These activities helped me understand the importance of giving back to society and contributing towards a cleaner and better environment.
+
 
 ### **Activities Involved**
 <!-- add the location where you given -->
@@ -149,10 +172,11 @@ During my internship period, I participated in multiple community-oriented activ
 
 ### **Impact / Contribution**
 
-- Helped create a supportive environment during the blood donation camp. <!-- add the location where you given -->
-- Actively participated in promoting a greener and cleaner surroundings.
-- Offered personal assistance to elder citizens, strengthening community bonds.
-- Improved skills in communication, coordination, and social responsibility.
+- Contributed to environmental improvement through active participation in tree plantation activities.
+- Supported elder citizens by providing assistance and strengthening community relationships.
+- Developed a sense of social responsibility and community awareness.
+- Improved communication, coordination, and teamwork skills through real-world interaction.
+
 
 ### **Photos**
 
@@ -185,5 +209,14 @@ The internship certificate serves as an official acknowledgment of the successfu
 
 <!-- you can add Acknowledgments over here in same syntax as below . eg trainer name , company name , role etc -->
 
-- [Prof. Radhakumari Challa](https://www.linkedin.com/in/prof-radhakumari-challa-a3850219b) , Executive Director and Founder - [SURE Trust](https://www.suretrustforruralyouth.com/)
+- [Prof. Radhakumari Challa](https://www.linkedin.com/in/prof-radhakumari-challa-a3850219b) - Executive Director and Founder - [SURE Trust](https://www.suretrustforruralyouth.com/) for providing this valuable learning opportunity and continuous support.
 
+- [Mr. Karthik R](linkedin.com/in/karthik-r-282597279) – Instructor and Technical Mentor, SURE Trust,
+  for his guidance in Java, DSA concepts, and practical project development.
+
+- [Mr. Lijo Joseph](linkedin.com/in/lijojoseph234) – Instructor and Technical Mentor, SURE Trust,
+  for his support, insights, and guidance during technical discussions
+  related to project design and implementation.
+
+- **SURE ProEd / SURE Trust Team** - 
+  for creating a structured learning environment and providing the necessary resources.
