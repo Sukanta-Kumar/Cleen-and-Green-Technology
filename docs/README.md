@@ -120,7 +120,7 @@ full stack architecture, API-based communication, and practical problem-solving
 while building a socially impactful solution.
 </p>
 <p>
-  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
+  <a href="https://github.com/Sukanta-Kumar/Cleen-and-Green-Technology/blob/49ad2d57316b0400cb7883cf486204ae797fa6fc/docs/SURE%20Trust%20project%20document.pdf" target="_blank"><strong>→ View Full Project Report</strong></a>
 </p>
 
 
