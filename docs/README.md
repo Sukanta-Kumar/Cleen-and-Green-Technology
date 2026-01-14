@@ -186,7 +186,7 @@ These activities helped me understand the importance of giving back to society a
 - These are just placeholder (sample) images <!-- remove this line -->
 
 <div align="center">
-<img src="<img width="1024" height="1040" alt="image" src="https://github.com/user-attachments/assets/d56c0fcb-9fc5-4644-84f5-4f0ff8c9914a" />
+<img src="https://github.com/user-attachments/assets/d56c0fcb-9fc5-4644-84f5-4f0ff8c9914a"
 " alt="Community Service Photo 1" width="30%">
 <img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/2/1759752731458?e=1766016000&v=beta&t=6RfJQWWqlQUPcCvDnQNW7kR6yf7w-wPDsIPxum409ck" alt="Community Service Photo 2" width="30%">
 <img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/3/1759752731458?e=1766016000&v=beta&t=yWaunKdRdLUKBLbmM3UjRYYz-_GSCfWEQ3_R7dW0xLM" alt="Community Service Photo 3" width="30%">
